@@ -1,6 +1,8 @@
 #include <string>
 #include <iostream>
 
+/* Finds the reverse of a string in O(n) time and O(1) space */
+
 void reverseString(std::string &str)
 {
 	//directly modifies the string argument
@@ -10,6 +12,8 @@ void reverseString(std::string &str)
 		char temp = input[i];
 		input[i] = input[j];
 		input[j] = temp;
+		i++;
+		j--;
 	}
 }
 
